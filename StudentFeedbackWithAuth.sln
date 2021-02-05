@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentFeedbackWithAuth", "StudentFeedbackWithAuth\StudentFeedbackWithAuth.csproj", "{5879F6E7-54ED-4123-99F9-DDCDC68BB4D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unit-testing-using-mstest", "unit-testing-using-mstest\unit-testing-using-mstest.csproj", "{7F9A71AB-D48B-481B-8454-3347D11DAB03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5879F6E7-54ED-4123-99F9-DDCDC68BB4D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5879F6E7-54ED-4123-99F9-DDCDC68BB4D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5879F6E7-54ED-4123-99F9-DDCDC68BB4D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5879F6E7-54ED-4123-99F9-DDCDC68BB4D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F9A71AB-D48B-481B-8454-3347D11DAB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F9A71AB-D48B-481B-8454-3347D11DAB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F9A71AB-D48B-481B-8454-3347D11DAB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F9A71AB-D48B-481B-8454-3347D11DAB03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34D4F2B7-F201-4710-9BCE-36D8AE705CE6}
+	EndGlobalSection
+EndGlobal

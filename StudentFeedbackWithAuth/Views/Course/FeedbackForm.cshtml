@@ -1,0 +1,52 @@
+﻿@model IEnumerable<StudentFeedbackWithAuth.Models.FeedbackQuestion>
+
+@{
+    ViewData["Title"] = "Feedback Form";
+}
+
+<h1>Feedback Form</h1>
+
+@*<p>
+    <a asp-action="Create">Feedback Form</a>
+</p>*@
+<table class="table">
+    @*<thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Question)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResponseType)
+            </th>
+            <th></th>
+        </tr>
+    </thead>*@
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            if (item.ResponseType == "rating")
+            {
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label for="feedBackQuestions+@item.Id"><span>@item.Id.</span> @Html.DisplayFor(modelItem => item.Question)</label>
+                        <input type="range" class="form-control-range" min="1" max="5" id="">
+                    </div>
+                </td>
+            </tr>
+            }
+            else
+            {
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label for="feedBackQuestions+@item.Id"><span>@item.Id.</span> @Html.DisplayFor(modelItem => item.Question)</label>
+                        <textarea class="form-control" id="" rows="3"></textarea>
+                    </div>
+                </td>
+            </tr>
+            }
+            }
+</tbody>
+</table>

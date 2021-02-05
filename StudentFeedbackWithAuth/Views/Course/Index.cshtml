@@ -1,0 +1,54 @@
+@model IEnumerable<StudentFeedbackWithAuth.Models.Course>
+
+@{
+    ViewData["Title"] = "Courses";
+}
+
+<h1>Available Courses</h1>
+
+<p>
+    @*<a asp-action="Create">Create a new course</a>*@
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                Course Rating Grade
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @if (item.ratingGrade == "red")
+                {
+                    <p class="text-danger">Bad</p>
+                }
+                else
+                {
+                    <p class="text-success">Good</p>
+                }
+            </td>
+            <td>
+                <a asp-action="FeedbackForm" asp-route-id="@item.Id">Participate in feedback</a>
+                @*<a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
